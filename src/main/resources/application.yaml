@@ -2,5 +2,14 @@ spring:
   application:
     name: platform
 
+  profiles:
+    active: dev
+
   thymeleaf:
     cache: false
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
