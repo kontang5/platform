@@ -15,9 +15,10 @@ public class HomeControllerTest {
     private MockMvc mockMvc;
 
     @Test
-    void shouldReturnJson() throws Exception {
+    void shouldReturnIndexView() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.msg").value("Hello World!"));
+                .andExpect(view().name("index"))
+                .andExpect(model().size(0));
     }
 }
