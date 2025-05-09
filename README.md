@@ -75,7 +75,7 @@ docs: update README with branch strategy
 ## Development and Deployment Plan
 
 - [x] Set up a basic Spring Boot server
-- [ ] Set up PostgreSQL and connect it to Spring Boot
+- [x] Set up PostgreSQL and connect it to Spring Boot
 - [ ] Build basic frontend pages with Thymeleaf and TailwindCSS
 - [ ] Create Dockerfiles and containerize services
 - [ ] Configure Nginx reverse proxy
