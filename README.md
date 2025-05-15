@@ -76,7 +76,7 @@ docs: update README with branch strategy
 
 - [x] Set up a basic Spring Boot server
 - [x] Set up PostgreSQL and connect it to Spring Boot
-- [ ] Build basic frontend pages with Thymeleaf and TailwindCSS
+- [x] Build basic frontend pages with Thymeleaf and TailwindCSS
 - [ ] Create Dockerfiles and containerize services
 - [ ] Configure Nginx reverse proxy
 - [ ] Orchestrate services with Docker Compose
