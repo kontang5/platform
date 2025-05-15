@@ -123,5 +123,29 @@
         <!--    </div>-->
     </footer>
 </div>
+<script>
+    const menu = document.getElementById('mobileMenu');
+    const toggle = document.getElementById('menuToggle');
+    const openButton = document.getElementById('iconOpen');
+    const closeButton = document.getElementById('iconClose');
+
+    let isOpen = false;
+
+    toggle.addEventListener('click', () => {
+        isOpen = !isOpen;
+
+        if (isOpen) {
+            menu.classList.remove('-translate-y-full');
+            menu.classList.add('translate-y-12');
+            openButton.classList.add('hidden');
+            closeButton.classList.remove('hidden');
+        } else {
+            menu.classList.remove('translate-y-12');
+            menu.classList.add('-translate-y-full');
+            openButton.classList.remove('hidden');
+            closeButton.classList.add('hidden');
+        }
+    });
+</script>
 </body>
 </html>
